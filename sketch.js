@@ -193,7 +193,8 @@ function feedDog() {
   foodS--;
   dog.addImage(happyDog);
   database.ref('/').update({
-    Food:foodS
+    Food:foodS,
+    FeedTime:hour()
   })
 
 }
